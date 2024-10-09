@@ -1,7 +1,7 @@
 services:
-  nictiz-r4-qa:
-    image: ghcr.io/ArdonToonstra/qa-tooling-fhir-r4:0.1.0
-    container_name: nictiz-r4-qa-zib2024
+  fhir-r4-qa:
+    image: ghcr.io/ardontoonstra/qa-tooling-fhir-r4:0.2.0
+    container_name: fhir-r4-qa-acme
     volumes:
       - type: bind
         source: ../..
