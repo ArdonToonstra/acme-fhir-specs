@@ -1,0 +1,28 @@
+main branch: origin/main
+ignored issues: known-issues.yml
+igs:
+  - fsh-generated
+  - nl-core
+script dir: util/qa
+
+patterns:
+  profiles: fsh-generated/*.xml
+  terminology: fsh-generated/vocabulary/**/*.xml
+  examples: examples/*.xml
+
+steps:
+  validate profiles:
+    description: Validate the zib profiles using the profile for zib profiles
+    patterns: profiles
+  validate terminology:
+    description: Validate terminology resources
+    patterns: terminology
+  validate examples:
+    description: Validate examples using the generic FHIR validation rules
+    patterns: examples
+  check resource ids:
+    description: Check if the .id matches the name of the file
+    patterns:
+      - profiles
+      - examples
+    script: check-id.sh
