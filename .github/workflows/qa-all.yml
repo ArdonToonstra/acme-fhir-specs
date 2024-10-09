@@ -20,7 +20,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Zib2024 QA
-        uses: ArdonToonstra/qa-tooling-fhir-r4@0.1.0
+        uses: ArdonToonstra/qa-tooling-fhir-r4@0.2.0
         with:
           changed-only: false
           verbosity-level: warning
