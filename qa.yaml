@@ -2,7 +2,6 @@ main branch: origin/main
 ignored issues: known-issues.yml
 igs:
   - fsh-generated
-  - nl-core
 script dir: util/qa
 
 patterns:

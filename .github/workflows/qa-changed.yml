@@ -10,8 +10,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Zib2024 QA
-        uses: ArdonToonstra/qa-tooling-fhir-r4@0.2.0
+      - name: qa acme
+        uses: ArdonToonstra/qa-tooling-fhir-r4@0.3.0
         with:
           changed-only: true
           extensible-binding-warnings: true
