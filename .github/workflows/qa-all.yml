@@ -20,7 +20,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: qa acme
-        uses: ArdonToonstra/qa-tooling-fhir-r4@0.3.0
+        uses: ArdonToonstra/qa-tooling-fhir-r4@0.4.0
         with:
           changed-only: false
           verbosity-level: warning

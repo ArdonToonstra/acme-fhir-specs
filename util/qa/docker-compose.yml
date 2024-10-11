@@ -1,6 +1,6 @@
 services:
   fhir-r4-qa:
-    image: ghcr.io/ardontoonstra/qa-tooling-fhir-r4:0.2.0
+    image: ghcr.io/ardontoonstra/qa-tooling-fhir-r4:0.4.0
     container_name: fhir-r4-qa-acme
     volumes:
       - type: bind
